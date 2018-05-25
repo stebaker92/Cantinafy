@@ -15,10 +15,6 @@ var generateHTML = function() {
 var cantinafy = function() {
 	setTimeout(function() { // Wait 3 seconds
 		var html = generateHTML();
-		$('body').html(html);
-		document.body.style.backgroundColor = "black";
-		setTimeout(function() { // Wait 20 seconds
-			window.location.replace(document.URL);
-		}, 20000);
+		$('body').append(html);
 	}, 3000);
 };
