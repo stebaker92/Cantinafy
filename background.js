@@ -1,21 +1,23 @@
 $(document).ready(function() {
 	var chance = Math.floor(Math.random() * 100);
 	if(chance == 69) {
-		cenafy();
+		cantinafy();
 	}
 });
 
 var generateHTML = function() {
-	var html = "<video autoplay loop style='height: 100vh; width: 100vw'><source src='https://raw.githubusercontent.com/Roystbeef/Cenafy/master/cena.webm' type='video/webm'><source src='https://raw.githubusercontent.com/Roystbeef/Cenafy/master/cena.mp4' type='video/mp4'></video>";
+	var html = `<audio controls>
+	<source src="https://raw.githubusercontent.com/stebaker92/Cantinafy/master/cantinafy.mp3" type="audio/mpeg">
+  </audio>`
 	return html;
 };
 
-var cenafy = function() {
-	setTimeout(function() { // Wait 3 seconds before cenafying
+var cantinafy = function() {
+	setTimeout(function() { // Wait 3 seconds
 		var html = generateHTML();
 		$('body').html(html);
 		document.body.style.backgroundColor = "black";
-		setTimeout(function() { // Wait 20 seconds for cena to finish
+		setTimeout(function() { // Wait 20 seconds
 			window.location.replace(document.URL);
 		}, 20000);
 	}, 3000);

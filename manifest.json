@@ -1,7 +1,7 @@
 {
-  "name": "Cenafy",
-  "version": "1.0.4",
-  "description": "And his name is John Cena",
+  "name": "Cantinafy",
+  "version": "1.0.0",
+  "description": "do DO do DO do-DO-do do-do",
 
   "content_scripts": [
     {
