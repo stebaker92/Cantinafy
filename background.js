@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 var generateHTML = function() {
-	var html = `<audio controls>
+	var html = `<audio controls autoplay>
 	<source src="https://raw.githubusercontent.com/stebaker92/Cantinafy/master/cantinafy.mp3" type="audio/mpeg">
   </audio>`
 	return html;
